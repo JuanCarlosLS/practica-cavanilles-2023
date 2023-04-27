@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <title>Formulario paises</title>
+    <title>Formulario Idioma</title>
 </head>
 <body>
     <header class="container">
         <div class="row justify-content-md-center">
                 <div class="col col-lg">
-                    <h1>INSERTAR CIUDAD</h1>
+                    <h1>INSERTAR IDIOMA</h1>
                 </div>
                 <div class="col-md-auto">
                     <a href="ciudad.html">
@@ -36,18 +36,17 @@
         <h2>Formulario</h2>
         <form class="row g-3  needs-validation" novalidate>
             <div class="input-group">
-                <label for="validationCustom01" class="input-group-text">Nombre de Ciudad</label>
+                <label for="validationCustom01" class="input-group-text">lenguaje</label>
                 <input type="text" aria-label="Nombre" class="form-control" placeholder="Introducir Nombre" required>
             </div>
-            <div class="input-group">
-                <label for="Direccion" class="input-group-text">Codigo de País </label><input class="form-control" type="text" placeholder="Introducir Codigo" required/>
-            </div>
-            <div class="input-group">
-                <label for="C.P." class="input-group-text">Provincia </label><input class="form-control" type="text" placeholder="Introducir C.P."/>
-            </div>
-            <div class="input-group">
-                <label for="Ciudad" class="input-group-text">Población </label><input class="form-control" type="number" placeholder="Introducir ciudad" required/>
-            </div>
+            <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupSelect01">Oficial</label>
+                <select class="form-select">
+                  <option selected></option>
+                  <option value="1">Si</option>
+                  <option value="2">No</option>
+                </select>
+              </div>
             </div>
             <div class="col-12">
                 <br>
