@@ -39,13 +39,13 @@
     <main class="container">
         <div class="row">
         <h2>Formulario</h2>
-        <form class="row g-3  needs-validation" novalidate>
+        <form class="row g-3  needs-validation" action="http://localhost/insertarP.php" method="get" novalidate>
             <div class="input-group">
                 <label for="validationCustom01" class="input-group-text">Nombre de País</label>
-                <input type="text" aria-label="Nombre" class="form-control" placeholder="Introducir Nombre" required>
+                <input type="text" aria-label="Nombre" name="Name" class="form-control" placeholder="Introducir Nombre" required>
             </div>
             <div class="input-group">
-                <label for="Direccion" class="input-group-text">Codigo de País </label><input class="form-control" type="text" placeholder="Introducir Codigo" required/>
+                <label for="Direccion" class="input-group-text">Codigo de País </label><input class="form-control" type="text" name="Code" placeholder="Introducir Codigo" required/>
             </div>
             </div>
             <div class="col-12">

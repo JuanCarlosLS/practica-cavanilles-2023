@@ -39,17 +39,21 @@
     <main class="container">
         <div class="row">
         <h2>Formulario</h2>
-        <form class="row g-3  needs-validation" novalidate>
+        <form class="row g-3  needs-validation" action="http://localhost/insertarL.php" method="get" novalidate>
+            <div class="input-group">
+                <label for="validationCustom01" class="input-group-text">Codigo</label>
+                <input type="text" aria-label="Nombre" name="CountryCode" class="form-control" placeholder="Introducir Codigo" required>
+            </div>
             <div class="input-group">
                 <label for="validationCustom01" class="input-group-text">lenguaje</label>
-                <input type="text" aria-label="Nombre" class="form-control" placeholder="Introducir Nombre" required>
+                <input type="text" aria-label="Nombre" name="Language" class="form-control" placeholder="Introducir Nombre" required>
             </div>
             <div class="input-group mb-3">
                 <label class="input-group-text" for="inputGroupSelect01">Oficial</label>
-                <select class="form-select">
+                <select class="form-select" name="IsOfficial">
                   <option selected></option>
-                  <option value="1">Si</option>
-                  <option value="2">No</option>
+                  <option value="T">Si</option>
+                  <option value="F">No</option>
                 </select>
               </div>
             </div>
@@ -58,6 +62,7 @@
                 <button class="btn btn-primary" type='submit'>ENVIAR</button>
             </div>
         </form>
+        <br>
         <iframe src="http://localhost/peticion3.php"></iframe>
     </main>
     <footer class="lead">
